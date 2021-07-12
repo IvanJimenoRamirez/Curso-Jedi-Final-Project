@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body {
+	background-color: #384059;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 8vh);
+    flex-direction: column;
+}
+.bar-wrapper { 
+    min-height: 4vh;
+    bottom: 0px;
+}
+.custom_opacity{
+    animation: fadeInFromNone 4s ease-out;
+    background-color: #555657;
+    border-radius: 5vh;
+    box-shadow: -2vh 1.5vh 5vh -2vh rgba(0,0,0,0.92);
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 65vh;
+    margin-top:5vh;
+}
+header{
+    margin: 0px !important;
+    max-width: 100vw !important;
+    display:flex;
+    justify-content: center;
+}
+.text_align{
+    text-align: center;
+}
+.main_title{
+    font-family: 'Righteous', cursive;
+    color:rgb(220, 226, 231);
+    font-size: 10vh;
+    margin-bottom: 0px;
+} 
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vh;
+    color: rgb(220, 226, 231);
+}
+main hr{
+    color: rgb(220, 226, 231);
+    height: 0.5vh !important;
+    border-radius: 5px;
+    margin-top: 4vh;
+}
+.start_button{
+    background-color: #BABCBD;
+    border-radius: 10vh;
+    padding: 2vh;
+    font-size: 2vh;
+    box-shadow: 0.25vh 0.25vh 1.25vh 0.5vh #000000;
+}
+.socialMedia{
+    margin-top: 15vh;
+    position: relative;
+    height: 10vw;
+    width: 20vw;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invisibleMedia{
+    position:absolute;
+    background-color: #384059;
+}
+.socialLeft{
+    width: 50%;
+    left:0;
+    height: 100%;
+    background-color: #384059;
+}
+.socialRight{
+    right:0;
+    width:50%;
+    height: 100%;
+}
+.socialShow{
+    z-index:1;
+    position:absolute;
+    padding:1vh;
+    background-color: #384059;
+}
+.clickedLeft{
+    transition: width 2s;
+}
+.clickedRight{
+    transition: width 2s;
+}
+.size_custom{
+    font-size: 2vh;
+}
+.socialIcons{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.customSize{
+    margin-top:2vh;
+}
+.limitedHeight{
+    max-height: 27vh;
+    animation: fadeInFromNone 1s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+.iconsSize{
+    font-size: 5vh;
+}

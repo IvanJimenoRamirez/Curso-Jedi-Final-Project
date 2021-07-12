@@ -1,0 +1,13 @@
+Colors:
+
+Background: #384059
+
+1 - #3A3D40
+2 - #757779
+3 - #BABCBD
+
+twitter: <i class="fab fa-twitter size_custom"></i>
+facebook: <i class="fab fa-facebook size_custom"></i>
+instagram: <i class="fab fa-instagram"></i>
+linkedIn: <i class="fab fa-linkedin-in"></i>
+github: <i class="fab fa-github"></i>
