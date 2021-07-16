@@ -158,7 +158,7 @@ $(window).on("load", function(){
                         "email":  `${inputEmail}`,
                         "password": `${inputPassword}`
                     });
-                    document.getElementById("errorSignIn").innerHTML = "Successfully created your account. Log in to continue.";
+                    document.getElementById("errorSignIn").innerHTML = "Successfully created your account. Go back and log in to continue.";
                     document.getElementById("errorSignIn").style = "background-color: #5bd7768c;"
                     $("#errorSignIn").show();
                     signUpEmail = inputEmail;

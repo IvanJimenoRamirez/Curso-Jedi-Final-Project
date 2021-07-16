@@ -177,6 +177,7 @@ main{
 
 #dropBtn{
     width:auto !important;
+    height:auto !important;
 }
 
 @media screen and (max-width: 990px) {
