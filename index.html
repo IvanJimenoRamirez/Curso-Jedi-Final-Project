@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+        <script src="js/login.js"></script>
+        <title>Main page</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="lateralNav">
+                <button id="lateralNav" class="invisibleBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="lateralNavAppears" class="lateralNavAppears">
+                <button id="hideLateralNav" class="invisibleBtn">
+                    <i class="fas fa-long-arrow-alt-right "></i>
+                </button>
+                <div id="navFlex" class="navFlex">
+                    <p class="navSubtitle"><u>About us</u></p>
+                    <div class="navText">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolores eius, deleniti exercitationem, vero velit odio dolorum temporibus ipsum eveniet quia nobis nulla soluta? Quasi ipsum saepe omnis magni velit?
+                    </div>
+                    <hr class="navDivisor">
+                    <p class="navSubtitle"><u>Socials</u></p>
+                    <div class="navSocialContainer">
+                        <a href="https://twitter.com/IvanJimenoRamir" target="_blank"> <i class="fab fa-twitter iconsSize" ></i> </a>
+                        <a href="https://www.facebook.com/ivan.jimenoramirez1" target="_blank"> <i class="fab fa-facebook iconsSize"></i> </a>
+                        <a href="https://www.instagram.com/ivan.jimenoramirez1/" target="_blank"> <i class="fab fa-instagram iconsSize"></i> </a>
+                        <a href="https://www.linkedin.com/in/ivan-jimeno-1ab450202/" target="_blank"> <i class="fab fa-linkedin-in iconsSize"></i> </a>
+                        <a href="https://github.com/IvanJimenoRamirez" target="_blank"> <i class="fab fa-github iconsSize"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main_wrapper">
+            <div id="formContainer" class="custom_opacity">
+                <p class="main_title text_align"><u>iSHOPY</u></p>
+                <p class="subtitle text_align">Your trusted online store</p>
+                <div id="logInContainer" class="logIn">
+                    <div id="logInAnimation" class="logInAnimation">
+                    </div>
+                    <div class="logInContainer">
+                        <button id="logInBtn">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="logInContainer">
+                        <button id="signUpBtn">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+                <form id="submitForm" class="signUpForm">
+                    <div id="last_child" class="alert alert-danger customSize2" role="alert">
+                        Incorrect email or password.
+                    </div>
+                </form>
+                <div id="backToLogin">
+                    <button id="goBack" class="goBack">
+                        Go back
+                    </button>
+                </div>
+                <form id="signUpForm" class="signUpForm">
+                    <button id="register" type="submit" class="btnForm">
+                        Register
+                    </button>
+                    <div id="errorSignIn" class="alert alert-danger customSize2" role="alert">
+                        Incorrect email or password.
+                    </div>
+                </form>
+                <div id="backToLogin2">
+                    <button id="goBack2" class="goBack">
+                        Go back
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer class="bar-wrapper">
+        </footer>
+        <script src="https://kit.fontawesome.com/dac5da4f2e.js" crossorigin="anonymous"></script>
+    </body>
+</html>
