@@ -10,7 +10,7 @@ let amount = [
 
 let index = 0;
 let telephony = 0;
-
+let btnClicked = 0;
 let totalItems = 0;
 
 $(window).on("load", function(){
@@ -26,8 +26,8 @@ $(window).on("load", function(){
         document.getElementById("checkoutItems").innerHTML = `${totalItems} items`
     }
     console.log(arrayItems);
-
     $("#openShop").on("click", () =>{
+        btnClicked = 1;
         document.getElementById("changeCategory").style = "height:0%";
         $("#openShop").hide();
         $("#imgSSD").prepend(`
@@ -56,7 +56,7 @@ $(window).on("load", function(){
         $("#categoryContainer").show();
     });
     $("#categoryCA").on("click", () => {
-        if (index) {
+        if (index && btnClicked) {
             document.getElementById("changeCategory").style = "height: 100%";
             setTimeout(function() {
                 index = 0;
@@ -70,7 +70,7 @@ $(window).on("load", function(){
         }
     });
     $("#categoryT").on("click", () => {
-        if (!index) {
+        if (!index && btnClicked) {
             index = 1;
             if (!telephony){
                 telephony = 1;

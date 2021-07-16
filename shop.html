@@ -13,21 +13,26 @@
         <title>iSHOPY</title>
     </head>
     <body>
-        <header class="row">
-            <div class="row">
-                <div class="col-lg-4 col-9 accountInfo">
+        <header class="row mx-0">
+            <div class="row mx-0">
+                <div class="col-12">
+                    <p class="main_title"> <u>iSHOPY</u></p>
+                </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col-lg-4 col-12 accountInfo">
                     <p id="userName">Welcome back!</p>
+                    <a class="goBack" href="index.html"> Sign Out </a>
+                </div>
+                <div class="mobileResponsiveness col-lg-4 col-12">
                     <button id="checkout" type="button" class="btn btn-primary position-relative">
                         Proceed to checkout
                         <span id="checkoutItems" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             0 items
                         </span>
-                        </button>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <p class="main_title"> <u>iSHOPY</u></p>
-                </div>
-                <div class="col-xl-4 col-12 dropdownContainer">
+                <div class="col-lg-4 col-12 dropdownContainer">
                     <div id="categoryContainer" class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle dropdownBtn" type="button" id="dropdownMenuButton1 animationOnCourse" data-bs-toggle="dropdown" aria-expanded="false">
                             Select Category
@@ -38,15 +43,14 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </header>
-        <main id="shopContainer" class="row">
+        <main id="shopContainer" class="row mx-0">
             <button id="openShop" class="openShopBtn">
                 Press here to open the Shop
             </button>
             <div id="changeCategory" class="changeCategory"></div>
-            <div id="shopBody" class="row">
+            <div id="shopBody" class="row mx-0">
                 <div id="category" class="col-12">
                 </div>
                 <div id="imgSSD" class="alignCard col-lg-6 col-12 card">

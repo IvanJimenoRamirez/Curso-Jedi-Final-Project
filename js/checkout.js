@@ -5,7 +5,6 @@ $(window).on("load", function(){
     var amountUSB = arrayItems[1];
     var amountPhone = arrayItems[2];
     var amountIPhone = arrayItems[3];
-
     $("#firstItem").append(`
         ${amountSSD !== "0" ? `<p> <span class="item">SSD - SanDisk.</span> Total amount: <b>${amountSSD}.</b> Price: <b> ${(Number(amountSSD)*44.99).toFixed(2)}$ </b> </p>`:""}
     `)

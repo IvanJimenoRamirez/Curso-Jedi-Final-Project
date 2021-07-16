@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Iván",
+      "lastName": "Jimeno",
+      "email": "ivan.jimeno@estudiantat.upc.edu",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "firstName": "Júlia",
+      "lastName": "Herrera",
+      "email": "julia.herrera.caba@estudiantat.upc.edu",
+      "password": "4321"
+    }
+  ]
+}

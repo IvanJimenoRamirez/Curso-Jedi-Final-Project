@@ -3,6 +3,8 @@ var state = -1;
 var existsForm = 0;
 var existsFormSignIn = 0;
 
+var signUpEmail, signUpPassword, signUp = 0;
+
 $(window).on("load", function(){
     $("#socialShow").on("click", () => {
         document.getElementById("socialRight").style = "width: 0;"
@@ -35,9 +37,12 @@ $(window).on("load", function(){
         let inputPassword = $("#logInPassword").val();
         var a = users.find(user => user.email === inputEmail);
         if (a && a.password === inputPassword) { //Existeix a la base de dades
-            window.location.replace('shop.html');
+            window.location.replace(`shop.html?`);
         } else{ //No existeix
-            $("#last_child").show();
+            if(signUp && signUpEmail === inputEmail && signUpPassword === inputPassword) {
+                window.location.replace(`shop.html?`);
+            }
+            else $("#last_child").show();
         }
         return false;
     });
@@ -48,7 +53,7 @@ $(window).on("load", function(){
         if (windowWidth > 1150) varWidth = 30;
         else if (windowWidth > 950) varWidth = 40;
         else varWidth = 50;
-        document.getElementById("lateralNavAppears").style = `width:${varWidth}%; display:block;`;
+        document.getElementById("lateralNavAppears").style = `width:${varWidth}%; display:block; border-left:black solid 1px;`;
         setTimeout(function() {
             $("#hideLateralNav").show();
             document.getElementById("navFlex").style = "display: flex;";
@@ -115,6 +120,7 @@ $(window).on("load", function(){
     })
     $("#register").on("click", async (event)=> {
         event.preventDefault();
+        document.getElementById("errorSignIn").style = "background-color: #d75b5b8c;"
         if (!users) users = (await axios.get("https://jedi-project.herokuapp.com/users")).data;
         let inputFirstName = $("#firstName").val();
         let inputLastName = $("#lastName").val();
@@ -123,6 +129,7 @@ $(window).on("load", function(){
         console.log(inputFirstName, inputLastName, inputEmail, inputPassword);
         //check if input email is correct.
         var exist = users.find(user => user.email === inputEmail);
+        if (!exist && signUp) if(inputEmail === signUpEmail) exist = true;
         if (inputFirstName.trim() === "" || inputLastName.trim() === "" || inputEmail.trim() === "" || inputPassword.trim() === "") {
             document.getElementById("errorSignIn").innerHTML ="All fields are required. Blanks are not allowed.";
             $("#errorSignIn").show();
@@ -151,7 +158,12 @@ $(window).on("load", function(){
                         "email":  `${inputEmail}`,
                         "password": `${inputPassword}`
                     });
-                    window.location.replace('shop.html');
+                    document.getElementById("errorSignIn").innerHTML = "Successfully created your account. Log in to continue.";
+                    document.getElementById("errorSignIn").style = "background-color: #5bd7768c;"
+                    $("#errorSignIn").show();
+                    signUpEmail = inputEmail;
+                    signUpPassword = inputPassword;
+                    signUp = 1;
                 }
                 else{
                     document.getElementById("errorSignIn").innerHTML ="The password cannot contain any space!";

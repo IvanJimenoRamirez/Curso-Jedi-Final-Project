@@ -50,7 +50,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 87vh;
+    max-height: auto;
+    min-width:50vw;
     margin-top:5vh;
     position: relative;
 }
@@ -62,6 +63,10 @@ header{
 }
 .text_align{
     text-align: center;
+}
+
+#errorSignIn{
+    color:black;
 }
 .main_title{
     font-family: 'Righteous', cursive;
@@ -113,7 +118,6 @@ main hr{
     height: 100vh;
     transition: width 1s;
     z-index: 11;
-    border-left:black solid 1px;
 }
 .navFlex{
     width: 100%;
@@ -124,7 +128,7 @@ main hr{
     flex-direction: column;
 }
 div .fa-long-arrow-alt-right {
-    font-size: 3vw;
+    font-size: 3vh;
     margin-left: 2vh;
     color:rgb(51, 53, 53);
     padding: 0vh 1vh 0vh 1vh;
@@ -204,7 +208,7 @@ a i {
 .formBtn{
     background-color:#474747;
     border:0;
-    margin-top: 6%;
+    margin-top: 1vh;
 }
 .formBtn:hover{
     background-color: #5f5d5d;
@@ -235,7 +239,7 @@ a i {
 }
 
 #signUpForm{
-    width:30vw;
+    width:100%;
     display:none;
 }
 
