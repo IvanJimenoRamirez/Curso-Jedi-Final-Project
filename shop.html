@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/shop.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+        <script src="js/shop.js"></script>
+        <title>iSHOPY</title>
+    </head>
+    <body>
+        <header class="row">
+            <div class="row">
+                <div class="col-lg-4 col-9 accountInfo">
+                    <p id="userName">Welcome back!</p>
+                    <button id="checkout" type="button" class="btn btn-primary position-relative">
+                        Proceed to checkout
+                        <span id="checkoutItems" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0 items
+                        </span>
+                        </button>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <p class="main_title"> <u>iSHOPY</u></p>
+                </div>
+                <div class="col-xl-4 col-12 dropdownContainer">
+                    <div id="categoryContainer" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdownBtn" type="button" id="dropdownMenuButton1 animationOnCourse" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Category
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><button id="categoryCA" class="dropdown-item categoryBtn">Computer Accessories</button></li>
+                            <li><button id="categoryT" class="dropdown-item categoryBtn">Telephony</button></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <main id="shopContainer" class="row">
+            <button id="openShop" class="openShopBtn">
+                Press here to open the Shop
+            </button>
+            <div id="changeCategory" class="changeCategory"></div>
+            <div id="shopBody" class="row">
+                <div id="category" class="col-12">
+                </div>
+                <div id="imgSSD" class="alignCard col-lg-6 col-12 card">
+                    <div id="ssdBody" class="card-body cardStyle">
+                        <button id="addSSD" class="firsBtn"> Add to cart </button>
+                        <button id="substractSSD"> Substract from cart </button>
+                    </div>
+                </div>
+                <div id="imgUSB" class="alignCard col-lg-6 col-12 card">
+                    <div id="usbBody" class="card-body cardStyle">
+                        <button id="addUSB" class="firsBtn"> Add to cart </button>
+                        <button id="substractUSB"> Substract from cart </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dac5da4f2e.js" crossorigin="anonymous"></script>
+    </body>
+</html>
