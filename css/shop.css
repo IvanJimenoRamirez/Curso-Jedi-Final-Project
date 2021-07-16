@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+
+@font-face{
+    font-family: graffiti;
+    src: url("../fonts/adrip1.ttf")
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url("../images/shop/background.png");
+    background-size: cover;
+    /* 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode:difference; */
+    background-color: rgb(201, 218, 231);
+    height:100%;
+    width:100vw;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width:100%;
+    background-color: antiquewhite;
+    margin-bottom: 3vh;
+    border-radius: 10rem;
+}
+main{
+    position:relative;
+    width:75vw;
+    min-height: 83vh;
+    background-color: rgb(178, 181, 184);
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.changeCategory{
+    background-image: url("../images/shop/3.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    transition: all 2s;
+    min-width: 100;
+    z-index:2;
+}
+#container{
+    margin: 0;
+}
+.main_title{
+    font-family: 'Righteous', cursive;
+    /* color:rgb(220, 226, 231); */
+    color:rgb(21, 24, 21);
+    font-size: 10vh;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.profileImage{
+    width:3vw;
+    height:3vw;
+    background-image: url("../images/shop/user_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 70%;
+    font-size:2vw;
+}
+.accountInfo{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+#userName{
+    font-family: 'Righteous', cursive;
+    margin: 0vw 2vw 0vw 0vw;
+    padding:0;
+    font-size:2.4vh;
+    color:rgb(21, 24, 21)
+}
+#checkout{
+    font-family: 'Righteous', cursive;
+    margin: 0vw 0vw 0vw 2vw;
+    border:0;
+    border-bottom: rgb(36, 35, 35) solid 5px;
+    background-color: rgb(66, 75, 66);
+    font-size:3vh;
+    color:rgb(21, 24, 21);
+    border-radius: 5vw;
+}
+.accountInfo p{
+    margin-right:1vw;
+}
+.dropdownContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.openShopBtn{
+    font-family: graffiti;
+    position:absolute;
+    top:40%;
+    width:auto;
+    background-color: transparent;
+    border:0px;
+    z-index:3;
+    font-size:10vh;
+    color:rgb(144, 11, 11);
+}
+.dropdownBtn{
+    width:17vh !important;
+    height: 6vh !important;
+}
+
+.cardStyle{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textAlign{
+    text-align: center;
+}
+
+#category{
+    display:none;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size:4vh;
+}
+
+#shopBody{
+    display:none;
+}
+.cardImage{
+    width:45vh;
+    margin-top:8%;
+}
+.alignCard{
+    align-items: center;
+    margin-bottom: 6vh;
+}
+.categoryBtn{
+    background-color: transparent;
+    border:0px;
+}
+#categoryContainer{
+    display:none;
+}
+
+.firsBtn{
+    margin-bottom: 1vh;
+}
